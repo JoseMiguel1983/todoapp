@@ -1,4 +1,4 @@
-<h1>Create a new Todos</h1>
+<h1>Edit an Existing</h1>
 
 <% if @todo.errors.any? %>
 <h2>The following errors prevented the todo from being saved</h2>
@@ -8,7 +8,6 @@
 	<% end %>
 </ul>
 <%end %>
-
 <%= form_for @todo do |f| %>
 <p>
 <%= f.label :name %><br>
